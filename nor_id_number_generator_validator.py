@@ -1,3 +1,8 @@
+#                    Jonas Thoresen, 2023
+# With some understanding of the id number rules, you can
+# easilly modify to take full id numbers as input and validate.
+# You can even with minimal effort generate all possible numbers since 1899.
+# This script takes all rules and math into concideration.
 import random
 import signal
 import datetime
@@ -92,8 +97,11 @@ def is_valid_fnr(fnr):
     return True
 
 
-birthday = input("Birthday (ddmmyy): ")
+birthday = input("Birthday (ddmmyy): ") 
 gender = input("Gender (male/female): ")
+# Change the 2 lines above to avoid terminal inputs.
+# Change from = input(", to =("ddmmyy"
+# Change from input(", to =("male/female
 fnrs = generate_fnr(birthday, gender)
 for fnr in fnrs:
     if int(fnr[8]) % 2 == 0 and gender.lower() == "male":
