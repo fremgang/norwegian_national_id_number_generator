@@ -1,8 +1,8 @@
-#                    Jonas Thoresen, 2023
-# With some understanding of the id number rules, you can
-# easilly modify to take full id numbers as input and validate.
+# Jonas Thoresen, 2023
+# With some understanding of the id number rules, you can easilly modify to take full id numbers as input and validate.
 # You can even with minimal effort generate all possible numbers since 1899.
 # This script takes all rules and math into concideration.
+# https://github.com/fremgang/norwegian_national_id_number_generator/edit/master/nor_id_number_generator_validator.py
 import random
 import signal
 import datetime
